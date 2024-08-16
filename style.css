@@ -15,10 +15,12 @@ section{
     justify-content: center;
     align-items: center;
     width: 700px;
-    height: 700px;
+    height: 750px;
 
 }
+
 .container .grid-area .grid-item{
+    cursor: pointer;
     width: 20px;
     height: 20px ;
     border: 1px solid grey;
@@ -31,6 +33,7 @@ section{
 }
 
 .grid-item-sm{
+    cursor: pointer;
     width: 10px;
     height: 10px;
     border: 1px solid grey;
@@ -39,6 +42,9 @@ section{
     padding: 0;
 }
 
+.controls{
+    padding-top: 50px;
+}
 /* From Uiverse.io by nikk7007 */ 
 button {
     padding: 0.8em 1.8em;
