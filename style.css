@@ -1,17 +1,79 @@
-.container{
+section{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
 
 }
-.container .gridbox{
+.container .grid-area .grid-item{
     width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    height: 20px ;
+    border: 1px solid grey;
     background-color: white;
     margin: 0;
     padding: 0;
-}   
+}  
+.container .grid-area .grid-item:hover{
+    background-color: black;
+}
+
+.grid-item-sm{
+    width: 10px;
+    height: 10px;
+    border: 1px solid grey;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* From Uiverse.io by nikk7007 */ 
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
