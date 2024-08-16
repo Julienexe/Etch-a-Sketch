@@ -77,4 +77,4 @@ function resetGrid() {
     });
 }
 
-createGrid(30,30);
+createGrid(20,20);
